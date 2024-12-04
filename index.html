@@ -1,136 +1,102 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!-- This is your page title that appears on the browser window or tab -->
-    <title>Unit Conversions</title>
-  </head>
-  <body>
-    <section id="home">
-        <!-- This is the main heading -->
-        <header><b>Unit Conversions</b></header>
-        <nav>
-            <!-- Button for redirecting users to the temperature section -->
-            <a href="#temperature"><button>Temperature</button></a>
-            <!-- Button for redirecting users to the weight section -->
-            <a href="#weight"><button>Weight</button></a>
-            <!-- Button for redirecting users to the distance section -->
-            <a href="#distance"><button>Distance</button></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website showcasing my skills, projects, and experience.">
+    <meta name="author" content="Salas Fajar Maulana">
+    <title>Salas Fajar Maulana - Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home" class="logo">Salas Fajar Maulana</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hello, I'm <span>Salas</span></h1>
+            <p>Aspiring [Your Role] | Building Innovative Solutions</p>
+            <a href="#projects" class="btn-primary">View My Work</a>
+        </div>
     </section>
 
-    <div id="all-conversion-sections">
-        <!-- This will have the conversion sections for Temperature, Weight, and Distance -->
-      
-        <section id="temperature">
-            <!-- Temperature conversion section -->
-            <div id="tmp">
-                <figure>
-                    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="200px"/>
-                    <figcaption>Celsius to Fahrenheit Conversion</figcaption>
-                </figure>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Brief description about your background, skills, and interests.</p>
+        </div>
+    </section>
 
-                <article>
-                    <!-- This contains the specific elements for temperature conversion -->
-                    <fieldset>
-                        <legend>Temperature</legend>
-                        <!-- Label for Temperature input -->
-                        <label for="Temperature">Celsius</label> <br/>
-
-                        <input type="number" id="c"> <br/>
-
-                      
-                        <!-- The conversion button -->
-                        <button id="temperature"> Convert </button> <br/>
-
-                      
-                        <!-- Label for Temperature output -->
-                        <input type="number" id="f"> <br/>
-
-                        <label for="Temperature">Fahrenheit</label>
-                    </fieldset>
-                </article>
-
-                <aside>
-                    To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32
-                </aside>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <!-- Add your project cards here -->
+                <div class="project-card">
+                    <img src="assets/project1.jpg" alt="Project 1">
+                    <h3>Project Title</h3>
+                    <p>Brief description of the project.</p>
+                    <a href="#" class="btn-secondary">View Project</a>
+                </div>
+                <!-- Repeat for other projects -->
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="weight">
-            <!-- Weight conversion section -->
-            <div id="wgt">
-              <figure>
-                <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png" width="200px"/>
-                <figcaption>Kilogram to Pound Conversion</figcaption>
-              </figure>
-          
-              <article>
-                <!-- This contains the specific elements for weight conversion -->
-                <fieldset>
-                    <legend>Weight</legend>
-                    <!-- Label for Weight input -->
-                    <label for="Weight">Kilograms</label> <br/>
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <a href="assets/YourResume.pdf" download class="btn-primary">Download Resume</a>
+        </div>
+    </section>
 
-                    <input type="number" id="kg"> <br/>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-            
-                    <!-- The conversion button -->
-                    <button id="weight"> Convert </button> <br/>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
 
-            
-                    <!-- Label for Weight output -->
-                    <input type="number" id="lbs"> <br/>
-
-                    <label for="Weight">Pounds</label>
-                </fieldset>
-              </article>
-          
-              <aside>
-                To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
-              </aside>
-            </div>
-        </section>
-
-        <section id="distance">
-            <!-- Distance conversion section -->
-            <div id="dst">
-              <figure>
-                <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png" width="200px"/>
-                <figcaption>Kilometer to Mile Conversion</figcaption>
-              </figure>
-          
-              <article>
-                <!-- This contains the specific elements for distance conversion -->
-                <fieldset>
-                    <legend>Distance</legend>
-                    <!-- Label for Distance input -->
-                    <label for="Distance">Kilometers</label> <br/>
-
-                    <input type="number" id="km"> <br/>
-
-                    <!-- The conversion button -->
-                    <button id="distance"> Convert </button> <br/>
-
-                    <!-- Label for Distance output -->
-                    <input type="number" id="m"> <br/>
-
-                    <label for="Distance">Miles</label>
-                </fieldset>
-              </article>
-
-              <aside>
-                To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilmeters: km &divide; 1.609
-              </aside>
-            </div>
-        </section>
-    </div>
-
-    <div id="go-home">
-        <a href="#home">
-            <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
-        </a>
-    </div>
-
-    <footer>Learn more about HTML as a part of the IBM Fullstack Cloud Developer Certification</footer>
-  </body>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
 </html>

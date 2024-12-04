@@ -1,102 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website showcasing my skills, projects, and experience.">
-    <meta name="author" content="Salas Fajar Maulana">
-    <title>Salas Fajar Maulana - Portfolio</title>
-    <!-- Favicon -->
-    <link rel="icon" href="assets/favicon.ico">
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="css/output.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <nav class="bg-gray-800 p-4">
-            <div class="container mx-auto flex justify-between items-center">
-                <a href="#home" class="text-white text-xl font-bold">Your Name</a>
-                <ul class="flex space-x-4">
-                    <li><a href="#about" class="text-gray-300 hover:text-white">About</a></li>
-                    <li><a href="#projects" class="text-gray-300 hover:text-white">Projects</a></li>
-                    <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio website showcasing my skills, projects, and experience.">
+        <meta name="author" content="Salas Fajar Maulana">
+        <title>Salas Fajar Maulana - Portfolio</title>
+        <!-- Favicon -->
+        <link rel="icon" href="assets/favicon.ico">
+        <!-- Tailwind CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body class="font-sans antialiased bg-gray-100 text-gray-800">
+    
+        <!-- Header Section -->
+        <header class="bg-gray-800 text-gray-300">
+            <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <a href="#home" class="text-white text-2xl font-bold">Salas Fajar Maulana</a>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-white">About</a></li>
+                    <li><a href="#projects" class="hover:text-white">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- Hero Section -->
+        <section id="home" class="bg-gray-900 text-white h-screen flex flex-col justify-center items-center text-center px-4">
+            <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+                Hello, I'm <span class="text-blue-500">Salas Fajar Maulana</span>
+            </h1>
+            <p class="mt-4 text-lg md:text-xl">Aspiring Software Engineer | Building Innovative Solutions</p>
+            <a href="#projects" class="mt-6 px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 text-white">
+                View My Work
+            </a>
+        </section>
+    
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-6">About Me</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    I am a passionate software engineer with expertise in building innovative and efficient solutions. 
+                    I love learning and experimenting with the latest technologies to solve real-world problems.
+                </p>
+            </div>
+        </section>
+    
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card -->
+                    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                        <img src="assets/project1.jpg" alt="Screenshot of Project 1" class="w-full">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold">Project Title</h3>
+                            <p class="mt-2 text-gray-600">Brief description of the project showcasing its features.</p>
+                            <a href="#" class="inline-block mt-4 text-blue-500 hover:underline">View Project</a>
+                        </div>
+                    </div>
+                    <!-- Add more project cards as needed -->
+                </div>
+            </div>
+        </section>
+    
+        <!-- Resume Section -->
+        <section id="resume" class="py-16 bg-gray-100 text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-6">Resume</h2>
+                <a href="assets/YourResume.pdf" download class="px-6 py-3 bg-blue-500 rounded-lg text-white hover:bg-blue-600">
+                    Download Resume
+                </a>
+            </div>
+        </section>
+    
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+                <form action="#" method="post" class="max-w-lg mx-auto">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                        <input id="name" type="text" name="name" placeholder="Your Name" required 
+                               class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
+                        <input id="email" type="email" name="email" placeholder="Your Email" required 
+                               class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required 
+                                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-6 py-3 bg-blue-500 rounded-lg text-white hover:bg-blue-600">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-gray-300 py-6">
+            <div class="container mx-auto px-4 text-center">
+                <p>&copy; 2024 Salas Fajar Maulana. All rights reserved.</p>
+                <ul class="flex justify-center space-x-4 mt-4">
+                    <li><a href="#" class="hover:text-blue-500">LinkedIn</a></li>
+                    <li><a href="#" class="hover:text-blue-500">GitHub</a></li>
+                    <li><a href="#" class="hover:text-blue-500">Twitter</a></li>
                 </ul>
             </div>
-        </nav>
-
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="bg-gray-900 text-white h-screen flex flex-col justify-center items-center">
-        <h1 class="text-5xl font-bold">Hello, I'm <span class="text-blue-500">Your Name</span></h1>
-        <p class="mt-4 text-lg">Aspiring [Your Role] | Building Innovative Solutions</p>
-        <a href="#projects" class="mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600">View My Work</a>
-    </section>
-
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Brief description about your background, skills, and interests.</p>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <!-- Add your project cards here -->
-                <div class="project-card">
-                    <img src="assets/project1.jpg" alt="Project 1">
-                    <h3>Project Title</h3>
-                    <p>Brief description of the project.</p>
-                    <a href="#" class="btn-secondary">View Project</a>
-                </div>
-                <!-- Repeat for other projects -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume">
-        <div class="container">
-            <h2>Resume</h2>
-            <a href="assets/YourResume.pdf" download class="btn-primary">Download Resume</a>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Salas Fajar Maulana. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
-</body>
+        </footer>
+    
+    </body>
 </html>
